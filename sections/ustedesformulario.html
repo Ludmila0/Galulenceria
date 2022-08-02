@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Experiencia de compra</title>
+    <link rel="shortcut icon" href="../img/favicon len.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/59a05d48a4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="fondoimagen fondonorepeat">
+    <main>
+        <header>
+            <section id="principal">
+                <article class="encabezado">
+                    <h1 class="encabezado__normal--negrita grande centrar interlineado">GALU LENCERIA</h1>
+                    <h2 class="encabezado__italica--pequenio--eslogan interlineado">Detalles que hacen estallar un
+                        corazón</h2>
+                </article>
+            </section>
+        </header>
+
+        <nav id="menu">
+            <ul class="menuhorizontal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="unpocodehistoria.html">¿Quienes somos?</a></li>
+                <li>
+                    <a href="">Productos</a>
+                    <ul class="menuvertical">
+                        <li><a href="">Conjuntos</a></li>
+                        <li><a href="">Deportivos</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Promos</a></li>
+                <li><a href="ustedesformulario.html">Ustedes</a></li>
+                <li>
+                    <a href="listas.html">Preguntas frecuentes</a>
+                    <ul class="menuvertical">
+                        <li><a href="comocomprar.html">¿Como realizar un pedido?</a></li>
+                        <li><a href="comorecibir.html">¿Como son las entregas?</a></li>
+                        <li><a href="formasdepago.html">Formas de pago</a></li>
+                        <li><a href="devolucion.html">Politica de devoluciones y/o cambios</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">Perfil</a>
+                    <ul class="menuvertical">
+                        <li><a href="">Ya tengo cuenta</a></li>
+                        <li><a href="">Registrarse</a></li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section class="formu">
+            <form action="guardar.php" method="POST" class="formu_fondo box">
+                <fieldset>
+                    <legend class="formu_fondo subrayado info italica encabezado__normal--negrita">Contanos tu
+                        experiencia de compra</legend>
+
+                    <div>
+                        <label for="nombre"> Nombre y Apellido:</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+                    <div>
+                        <label for="Telefono">Telefono</label>
+                        <input type="number" name="Telefono">
+                    </div>
+                    <div>
+                        <label for="¿Como valoras nuestra atencion?">¿Como valoras nuestra atencion?</label>
+
+                        <input type="radio" name="opinion"> Mal
+                        <input type="radio" name="opinion"> Maso menos
+                        <input type="radio" name="opinion"> Bien
+                        <input type="radio" name="opinion"> Excelente
+                    </div>
+                    <div>
+                        <label for="¿Volverias a elegirnos?">¿Volverias a elegirnos?</label>
+                        <select name="¿Volverias a elegirnos?">
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                            <option value="Siempre">Siempre</option>
+                        </select>
+                        <div>
+                            <div>
+                                <label for="Mensaje">¿Alguna recomendacion para mejorar?</label>
+                                <textarea name="Mensaje"> </textarea>
+                            </div>
+                            <div>
+                                <input type="reset" value="Limpiar formulario">
+                                <input type="submit" value="Enviar formulario">
+                            </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <hr>
+            <address>
+                Ludmila Shirley Pedrozzi Taborda<br>
+                ludmila.pedrozzi02@gmail.com
+            </address>
+        </footer>
+    </main>
+</body>
+
+</html>

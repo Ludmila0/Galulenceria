@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section article h1 {
+    color: rgba(233, 48, 88, 0.658)
+}
+
+.imgTodas {
+    width: 250px;
+}
+
+header {
+    width: 100%;
+}
+
+#principal {
+    background-color: rgba(223, 137, 162, 0.863);
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+
+.encabezado__normal {
+    font-style: normal;
+    font-size: 50px;
+}
+
+.italica {
+    font-style: italic;
+}
+
+.encabezado__normal--negrita {
+    font-weight: bold;
+}
+
+.encabezado__italica--pequenio {
+    font-size: 25px;
+}
+
+.grande {
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+.encabezado__italica--pequenio--eslogan {
+    font-family: 'Caveat', cursive;
+}
+
+.centrar {
+    text-align: center;
+}
+
+.interlineado {
+    line-height: 0.8;
+}
+
+.interlineadotexto {
+    line-height: 1.5;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.fondoimagen {
+    background-image: url("../img/wallpaper2.jpg");
+    background-size: cover;
+}
+
+.fondonorepeat {
+    background-repeat: no-repeat;
+}
+
+.formu {
+    position: relative;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.formu_fondo {
+    background-color: rgba(212, 108, 148, 0.973);
+}
+
+.formu_fondo--uppercase {
+    text-transform: uppercase;
+}
+
+/*menu*/
+#menu {
+    width: 100%;
+    background-color: rgb(43, 192, 197);
+    width: 98%;
+    margin: 5px;
+}
+
+body nav ul {
+    overflow: hidden;
+    list-style: none;
+}
+
+body nav ul li {
+    float: left;
+}
+
+body nav ul li a {
+    display: grid;
+    width: 100%;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    margin: 0px 50px 0px 70px;
+}
+
+.menuhorizontal>li:hover {
+    background-color: rgb(247, 241, 241);
+}
+
+.menuvertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 380px;
+    background-color: rgb(238, 180, 240);
+}
+
+.menuhorizontal li:hover .menuvertical {
+    display: block;
+}
+
+.menuvertical li:hover {
+    background-color: rgb(230, 106, 154);
+}
+
+.menuvertical li a {
+    display: block;
+    color: rgb(252, 251, 255);
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu_bar {
+    display: none;
+}
+
+.formuContacto {
+    background-color: aquamarine;
+    position: relative;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+    border: solid yellow;
+}
+
+.info {
+    font-size: 22px;
+}
+
+.preg {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.padre-flex {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(233, 243, 174);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-around;
+}
+
+.hijo-flex {
+    background-color: coral;
+    margin: 10px;
+    padding: 10px;
+}
+
+.padre-flex .hijo-flex img {
+    width: 200px;
+}
+
+.padreDos-flex {
+    display: flex;
+    flex-flow: row-reverse wrap;
+}
+
+.hijodos-flex {
+    background-color: rgb(238, 158, 198);
+    margin: 10px;
+    padding: 10px;
+}
+
+/*grid*/
+.grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.8fr 5fr 5fr 1fr 1fr;
+    gap: 5px;
+}
+
+.grid>* {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: orange;
+}
+
+.grid>header {
+    grid-column: 1/6;
+}
+
+.grid>nav {
+    grid-column: 1/6;
+}
+
+.grid>section {
+    grid-column: 1/5;
+}
+
+.grid>aside {
+    grid-column: 5/6;
+    grid-row: 3/6;
+}
+
+.grid>footer {
+    grid-row: 6/7;
+    grid-column: 1/6;
+}
+.grid>article{
+    grid-column: 1/6;
+    grid-row: 5/6;
+}
+/*items*/
+.itemsgrid {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: rgb(100, 46, 55);
+    display: grid;
+    width: 100%;
+    height: 100px;
+    grid-template-columns: 25px 25px 25px 25px;
+    gap: 10px;
+}
+
+.itemsgrid div {
+    border: solid 1px;
+    width: 100px;
+    font-size: 20px;
+    padding: 20px 20px 20px 20px;
+    background-image: linear-gradient(rgb(245, 245, 125), pink);
+}
+
+.bar {
+    display: none;
+}
+
+.traslate {
+    transform: translate(60px, 130px);
+}
+
+.less {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.importante {
+    width: 200px;
+    height: 120px;
+    background-color: rgb(125, 206, 243);
+    font-size: 25px;
+    transform: skewX(15deg) translate(300px, 20px);
+}
+
+@keyframes efecto {
+    0% {
+        width: 180px;
+    }
+
+    12% {
+        width: 60px;
+        background-color: red;
+    }
+
+    25% {
+        width: 100px;
+        background-color: green;
+    }
+    58% {
+        width: 50px;
+        background-color: blueviolet;
+    }
+    75% {
+        width: 200px;
+        background-color: aqua;
+    }
+    100% {
+        width: 100px;
+        background-color: darkgoldenrod;
+    }
+}
+
+.animation {
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+p {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+}
+
+body {
+    background-color: coral;
+}
+
+/*TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menuhorizontal {
+        background-color: rgb(160, 101, 219);
+    }
+    .grid>aside {
+        grid-column: 5/6;
+        grid-row: 3/4;
+    }
+    .grid>article{
+        grid-column: 1/6;
+    }
+    .grid {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.8fr 5fr 3fr 1fr 0.5fr;
+        gap: 5px;
+    }
+}
+
+
+/*MOBILE*/
+@media screen and (max-width: 767px) {
+    .grid>* {
+        background-color: rgb(131, 17, 17);
+    }
+
+    .grid>aside {
+        display: none;
+    }
+
+    .grid>section {
+        grid-column: 1/6;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header nav {
+        width: 90px;
+    }
+
+    #menu {
+        width: 50%;
+        height: 100%;
+        background-color: rgb(143, 222, 224);
+        margin: 0;
+        position: fixed;
+    }
+
+    body nav ul {
+        list-style: none;
+        display: block;
+        float: none;
+    }
+
+    body nav ul li {
+        float: none;
+    }
+
+    body nav ul li a {
+        display: inline-block;
+        width: 50%;
+        margin: 0;
+        padding: 10px;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .menuhorizontal>li:hover {
+        background-color: rgb(247, 241, 241);
+        width: 90% auto;
+    }
+
+    .menuvertical {
+        display: none;
+        list-style: none;
+        width: 450px;
+        background-color: rgb(238, 180, 240);
+    }
+
+    .menuhorizontal li:hover .menuvertical {
+        display: block;
+        width: 90%;
+    }
+
+    .menuvertical li:hover {
+        background-color: rgb(230, 106, 154);
+    }
+
+    .menuvertical li a {
+        display: block;
+        color: rgb(252, 250, 255);
+        padding: 5px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+    }
+
+    .menu_bar .btn-menu {
+        display: block;
+        padding: 15px;
+        background-color: rgb(160, 147, 241);
+        color: rgb(7, 5, 5);
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    .menu_bar span .icon {
+        display: none;
+    }
+
+    .bar {
+        background-color: yellow;
+        display: block;
+        width: 100%;
+    }
+
+    .bar .iconheader {
+        display: block;
+        float: right;
+    }
+
+    .importante {
+        display: none;
+    }
+}
+
+/*DESKOP default, a partir de 1024px*/
