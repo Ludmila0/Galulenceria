@@ -8,9 +8,15 @@ header {
 
 .fa-solid {
     color: crimson;
-    margin: 15px;
+    margin: 10px;
     display: inline-block;
-    
+    justify-content: space-evenly;
+}
+.fa-house {
+    text-align: left;
+}
+.iconoderecha {
+    text-align: end;
 }
 h1 {
     font-weight: bold;
@@ -36,11 +42,32 @@ ul>li:hover {
 .dropvertical a:hover {
     background-color: pink;
 }
-
 .menunave {
     display: grid;
     width: 100%;
     color: black;
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
+}
+.menuespacio {
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px) {
+    .menuespacio {
+        width: 100%;
+        justify-content:left;
+    }
+    .iconoderecha {
+        position:relative;
+        bottom: 45px;
+    }
+    header div nav section {
+        height: 10px;
+    }
+    .fa-solid {
+        margin: 10px;
+        display: inline-block;
+    }
 }
