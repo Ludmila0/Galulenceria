@@ -72,6 +72,10 @@ ul>li:hover {
     text-decoration: underline;
 }
 
+.carruselContainer {
+    width: 400px;
+}
+
 @media screen and (max-width: 767px) {
     .menuespacio {
         width: 100%;
