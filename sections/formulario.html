@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/favicon len.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -64,8 +65,18 @@
                         </div>
                     </li>
 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../sections/listas.html" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Perfil
+                        </a>
+                        <div class="dropdown-menu dropvertical" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Ya tengo cuenta</a>
+                            <a class="dropdown-item" href="#">Registrarse</a>
+                        </div>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Perfil</a>
+                        <a class="nav-link" href="ustedesformulario.html">Ustedes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="formulario.html">Contacto</a>
@@ -77,7 +88,7 @@
         <section class="formuContacto">
             <form action="guardar.php" method="POST">
                 <fieldset>
-                    <legend class="info subrayado italica encabezado__normal--negrita">Quiero mas información!</legend>
+                    <legend class="subrayado">Quiero mas información!</legend>
 
                     <div>
                         <label for="nombre"> Nombre y Apellido:</label>
