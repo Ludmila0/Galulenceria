@@ -35,3 +35,14 @@ ul>li:hover {
 .dropvertical a:hover {
     background-color: pink;
 }
+
+.menunave {
+    display: grid;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    justify-content:space-between;
+    
+}
