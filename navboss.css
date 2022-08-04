@@ -38,6 +38,7 @@ h2 {
 
 ul>li:hover {
     background-color: white;
+    transition-duration:1s ;
 }
 .dropvertical a:hover {
     background-color: pink;
