@@ -35,7 +35,6 @@ h2 {
     line-height: 0.8;
     font-weight: bold;
 }
-
 ul>li:hover {
     background-color: white;
     transition-duration:1s ;
@@ -71,12 +70,64 @@ ul>li:hover {
 .subrayado {
     text-decoration: underline;
 }
-
 .carruselContainer {
-    width: 400px;
+    width: 450px;
+}
+body {
+    background-color: rgb(255, 208, 243);
 }
 
-@media screen and (max-width: 767px) {
+.padre-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(233, 243, 174);
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.hijo-flex {
+    background-color: coral;
+    padding: 10px;
+}
+.padre-flex .hijo-flex img {
+    width: 170px;
+}
+
+.gridLud {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.gridLud>* {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(201, 150, 55);
+}
+.gridLud> .sectionuno {
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+.gridLud>aside {
+    grid-column: 5/6;
+    grid-row: 1/5;
+}
+.gridLud > .sectiondos {
+    grid-column: 3/5;
+    grid-row: 1/5;
+}
+.gridLud>article{
+    grid-column: 1/6;
+    grid-row: 5/6;
+    height: 150px;
+}
+.gridLud>footer {
+    grid-row: 6/7;
+    grid-column: 1/6;
+}
+
+@media screen and (max-width: 995px) {
     .menuespacio {
         width: 100%;
         justify-content:left;
@@ -84,14 +135,46 @@ ul>li:hover {
     .iconoderecha {
         position:relative;
     }
-
     .fa-solid {
         margin: 10px;
         display: inline-block;
     }
+    .gridLud>aside {
+        display: none;
+    }
+    .gridLud > .sectiondos {
+        grid-column: 3/6;
+        grid-row: 1/5;
+    }
+    .carruselContainer {
+        width: 350px;
+    }
 }
-body {
-    background-color: rgb(255, 208, 243);
+
+@media screen and (max-width: 720px) {
+    .gridLud> .sectionuno {
+        grid-column: 1/6;
+        grid-row: 1/5;
+    }
+    .gridLud>aside {
+        display: none;
+    }
+    .gridLud > .sectiondos {
+        grid-column: 1/6;
+        grid-row: 3/5;
+    }
+    .gridLud>article{
+        grid-column: 1/6;
+        grid-row: 5/6;
+        height: 150px;
+    }
+    .gridLud>footer {
+        grid-row: 6/7;
+        grid-column: 1/6;
+    }
+    .carruselContainer {
+        width: 370px;
+    }
 }
 
 /*ACOMODAR*/
@@ -108,7 +191,6 @@ body {
     grid-template-columns: 25px 25px 25px 25px;
     gap: 10px;
 }
-
 .itemsdegrid div {
     border: solid 1px;
     width: 100px;
@@ -166,36 +248,7 @@ p {
     animation-iteration-count: infinite;
     font-size: 50px;
 }
-.padre-flex {
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(233, 243, 174);
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: space-around;
-}
 
-.hijo-flex {
-    background-color: coral;
-    margin: 10px;
-    padding: 10px;
-}
-
-.padre-flex .hijo-flex img {
-    width: 200px;
-}
-
-.padreDos-flex {
-    display: flex;
-    flex-flow: row-reverse wrap;
-}
-
-.hijodos-flex {
-    background-color: rgb(238, 158, 198);
-    margin: 10px;
-    padding: 10px;
-}
 .importante {
     width: 200px;
     height: 120px;
