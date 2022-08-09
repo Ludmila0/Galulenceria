@@ -91,8 +91,8 @@ ul> form li:hover {
     align-content: flex-start;
 }
 .hijo-flex {
-    background-color: coral;
     padding: 10px;
+    background-image: linear-gradient(rgb(245, 245, 125), pink);
 }
 .padre-flex .hijo-flex img {
     width: 170px;
@@ -107,7 +107,7 @@ ul> form li:hover {
 }
 .gridLud>* {
     border: 1px solid rgb(255, 255, 255);
-    background-color: rgb(201, 150, 55);
+    background-color: rgb(162, 247, 242);
 }
 
 .gridLud>aside {
@@ -142,10 +142,105 @@ ul> form li:hover {
 }
 .itemsdegrid div {
     border: solid 1px;
-    width: 200px;
+    width: 350px;
     height: 100px;
     font-size: 20px;
-    background-image: linear-gradient(rgb(245, 245, 125), pink);
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animacionp {
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+}
+
+.importante {
+    width: 200px;
+    height: 120px;
+    background-color: rgb(125, 206, 243);
+    font-size: 25px;
+    transform: skewX(15deg) translate(80px, 20px);
+}
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+  a:hover {
+    color: #020202;
+    text-decoration: none;
+}
+#img_obs{
+	height: 200px;
+}
+#img{
+	height: 350px;
+}
+.modal{
+    padding-top: 5%;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    text-align: center;
+  }
+  .bodyModal{
+    margin:0px auto;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    height: 50%;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    align-items: center;
+    background-color: #fff;
+    display: block;
+  }
+h6 {
+	text-align: left;
+}
+@keyframes efecto {
+    0% {
+        width: 180px;
+    }
+    12% {
+        width: 60px;
+        background-color: red;
+    }
+    25% {
+        width: 100px;
+        background-color: green;
+    }
+    75% {
+        width: 200px;
+        background-color: aqua;
+    }
+    100% {
+        width: 250px;
+        background-color: darkgoldenrod;
+    }
+}
+
+.animation {
+    animation-name: efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 1s;
 }
 
 @media screen and (max-width: 995px) {
@@ -186,75 +281,4 @@ ul> form li:hover {
         width: 1000px;
         height: 5px;
     }
-}
-
-@keyframes efecto {
-    0% {
-        width: 180px;
-    }
-
-    12% {
-        width: 60px;
-        background-color: red;
-    }
-
-    25% {
-        width: 100px;
-        background-color: green;
-    }
-    58% {
-        width: 50px;
-        background-color: blueviolet;
-    }
-    75% {
-        width: 200px;
-        background-color: aqua;
-    }
-    100% {
-        width: 100px;
-        background-color: darkgoldenrod;
-    }
-}
-
-.animation {
-    animation-name: efecto;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-delay: 1s;
-}
-@keyframes aparecer {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.animacionp {
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: infinite;
-    font-size: 50px;
-}
-
-.importante {
-    width: 200px;
-    height: 120px;
-    background-color: rgb(125, 206, 243);
-    font-size: 25px;
-    transform: skewX(15deg) translate(300px, 20px);
-}
-a {
-    color: black;
-    text-decoration: none;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
-}
-  a:hover {
-    color: #020202;
-    text-decoration: none;
-}
-#img_obs{
-	height: 200px;
 }

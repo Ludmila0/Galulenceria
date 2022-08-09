@@ -91,135 +91,137 @@
         </div>
     </nav>
 
-    <!--form de registrarse-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Registro de Clientes</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <h6>Nombre Completo</h6>
-                    <div class="input-group mb-3">
-
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="completo" placeholder="Nombres Apellidos"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <h6>Dirección</h6>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-home"></i></span>
-                        </div>
-                        <input type="text" class="form-control" id="dir" placeholder="Av 17 N 3-35"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <h6>Email</h6>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                        </div>
-                        <input type="email" id="email" class="form-control" placeholder="Correo Electrónico"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <h6>Telefono</h6>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                        </div>
-                        <input type="text" id="tel" class="form-control" placeholder="3157876185" aria-label="Username"
-                            aria-describedby="basic-addon1">
-                    </div>
-                    <h6>Password</h6>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
-                        </div>
-                        <input type="password" minlength="6" id="pass1" class="form-control" placeholder="Password"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                        <input type="password" minlength="6 id=" pass2" class="form-control" placeholder="Confirmación"
-                            aria-label="Username" aria-describedby="basic-addon1">
-
-                    </div>
-                    <h6 id="min">Mínimo 6 Caracteres</h6>
-                </div>
-                <div id="boton" class="modal-footer text-left">
-
-                    <input type="submit" value="Registrarse" id="registrar" class="btn btn-primary"
-                        data-dismiss="modal" />
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--form de contacto-->
-    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contacto de Clientes</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="alert alert-primary alert-dismissible fade show text-left" role="alert">
-                        <strong>Info!</strong> Si tienes alguna pregunta no dudes en contactarnos. Estaremos
-                        atentos a responder cualquier inquietud que tengas.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <h6>Nombre Completo</h6>
-                    <div class="input-group mb-3">
-
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                        </div>
-                        <input type="text" id="nombre" class="form-control" placeholder="Nombres Apellidos"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <h6>Email</h6>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-
-                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
-                        </div>
-                        <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico"
-                            aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                    <h6>Mensaje</h6>
-                    <div class="input-group">
-
-                        <textarea class="form-control" id="campo" aria-label="With textarea"></textarea>
-                    </div>
-
-                </div>
-                <div id="boton" class="modal-footer text-left">
-
-                    <input type="submit" value="Contactar" id="contactar" class="btn btn-primary"
-                        data-dismiss="modal" />
-                </div>
-            </div>
-        </div>
-    </div>
-
     <main>
 
         <body>
+            <!--form de registrarse-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Registro de Clientes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Nombre Completo</h6>
+                            <div class="input-group mb-3">
+
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="completo" placeholder="Nombres Apellidos"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h6>Dirección</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-home"></i></span>
+                                </div>
+                                <input type="text" class="form-control" id="dir" placeholder="Av 17 N 3-35"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h6>Email</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa fa-envelope"></i></span>
+                                </div>
+                                <input type="email" id="email" class="form-control" placeholder="Correo Electrónico"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h6>Telefono</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                </div>
+                                <input type="text" id="tel" class="form-control" placeholder="3157876185"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h6>Password</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                                </div>
+                                <input type="password" minlength="6" id="pass1" class="form-control"
+                                    placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="password" minlength="6 id=" pass2" class="form-control"
+                                    placeholder="Confirmación" aria-label="Username" aria-describedby="basic-addon1">
+
+                            </div>
+                            <h6 id="min">Mínimo 6 Caracteres</h6>
+                        </div>
+                        <div id="boton" class="modal-footer text-left">
+
+                            <input type="submit" value="Registrarse" id="registrar" class="btn btn-primary"
+                                data-dismiss="modal" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--form de contacto-->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Contacto de Clientes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-primary alert-dismissible fade show text-left" role="alert">
+                                <strong>Info!</strong> Si tienes alguna pregunta no dudes en contactarnos. Estaremos
+                                atentos a responder cualquier inquietud que tengas.
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <h6>Nombre Completo</h6>
+                            <div class="input-group mb-3">
+
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                </div>
+                                <input type="text" id="nombre" class="form-control" placeholder="Nombres Apellidos"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h6>Email</h6>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa fa-envelope"></i></span>
+                                </div>
+                                <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <h6>Mensaje</h6>
+                            <div class="input-group">
+
+                                <textarea class="form-control" id="campo" aria-label="With textarea"></textarea>
+                            </div>
+
+                        </div>
+                        <div id="boton" class="modal-footer text-left">
+
+                            <input type="submit" value="Contactar" id="contactar" class="btn btn-primary"
+                                data-dismiss="modal" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!--listado de productos-->
             <div class="container col-12">
                 <div class="row">
@@ -252,25 +254,28 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-sm-3">
                         <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
-                            </h5>
-                            <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
-                                Talle 85,90,95 y 100<br>
-                                Precio: $1500</p>
-                            <p class="collapse" id="collapseExample2">
-                        Ver mas Respecto a este Articulo
-                      </p>
-                            <p class="card-text text-right">
-                            <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
-                            <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"   href="#" class="btn bt-success">Más >></a>
-                          </p>
-                          </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
+                                <p class="collapse" id="collapseExample2">
+                                    Ver mas Respecto a este Articulo
+                                </p>
+                                <p class="card-text text-right">
+                                    <a data-toggle="modal" data-target="#exampleModal3" href="#"
+                                        class="btn btn-primary">Añadir al Carrito</a>
+                                    <a data-toggle="collapse" href="#collapseExample2" role="button"
+                                        aria-expanded="false" aria-controls="collapseExample" href="#"
+                                        class="btn bt-success">Más >></a>
+                                </p>
+                            </div>
                         </div>
-                      </div>
+                    </div>
 
                     <div class="col-sm-3">
                         <div class="card">
@@ -414,20 +419,15 @@
                         </div>
                         <div class="modal-body col-12" id="cuerpo">
                             <div class="col-sm-6">
-                                <img id="img_detalle" src="imagen/alcanciabuena.png">
+                                <img id="img" src="../img/conaro.jpg">
                             </div>
                             <div class="col-sm-6 text-left">
                                 <p>
-                                    <i class="icon fa fa-check-square-o"></i>Nombre: Desayuno Sorpresa<br>
-                                    <i class="icon fa fa-check-square-o"></i>Espectacular Detalle, Incluye:<br>
-                                    <i class="icon fa fa-check-square-o"></i>Delicioso Cupcake decorado<br>
-                                    <i class="icon fa fa-check-square-o"></i>Sandwich de Jamón y Queso Importada
-                                    710ml<br>
-                                    <i class=" icon fa fa-check-square-o"></i>Vaso en Cristal con Sticker<br>
-                                    <i class="icon fa fa-check-square-o"></i>Caja decorativa<br>
-                                    <i class="icon fa fa-check-square-o"></i>Combas<br>
-                                    <i class="icon fa fa-check-square-o"></i>Tarjeta personalizada<br>
-                                    Valor: 50000<br>
+                                    <i class="icon fa-solid fa-circle-check"></i>Nombre: Brallet de encaje <br>
+                                    <i class="fa-solid fa-circle-check"></i>Color: Rojo<br>
+                                    <i class="fa-solid fa-circle-check"></i>Talle: 95<br>
+                                    <i class="fa-solid fa-circle-check"></i>Envio a domicilio<br>
+                                    <i class="fa-solid fa-circle-check"></i>Precio:1500<br>
                                 </p>
                             </div>
 
@@ -435,15 +435,14 @@
                         <div id="boton" class="modal-footer text-left">
                             <input type="submit" value="Volver" id="añadir al Carrito" class="btn btn-primary"
                                 data-dismiss="modal" />
-                            <input type="submit" value="Añadri al Carrito" id="" class="btn btn-primary"
+                            <input type="submit" value="Añadir al Carrito" id="" class="btn btn-primary"
                                 data-dismiss="modal" />
                         </div>
                     </div>
                 </div>
             </div>
 
-
-            <footer >
+            <footer>
                 <address>
                     Ludmila Shirley Pedrozzi Taborda<br>
                     ludmila.pedrozzi02@gmail.com
@@ -456,9 +455,4 @@
             <script src="../boostrap/js/bootstrap.bundle.js"></script>
             <script src="../boostrap/js/bootstrap.js"></script>
         </body>
-
-
-
-
-
     </main>
