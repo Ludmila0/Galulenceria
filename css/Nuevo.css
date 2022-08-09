@@ -109,7 +109,6 @@ ul> form li:hover {
     border: 1px solid rgb(255, 255, 255);
     background-color: rgb(162, 247, 242);
 }
-
 .gridLud>aside {
     grid-column: 5/6;
     grid-row: 1/5;
@@ -175,7 +174,7 @@ a {
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-  a:hover {
+a:hover {
     color: #020202;
     text-decoration: none;
 }
