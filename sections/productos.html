@@ -56,8 +56,8 @@
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Preguntas frecuentes
                     </a>
                     <div class="dropdown-menu dropvertical" aria-labelledby="navbarDropdownMenuLink">
@@ -91,33 +91,156 @@
         </div>
     </nav>
 
-    <main>
-        <body>
-            <br>
+    <!--form de registrarse-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro de Clientes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h6>Nombre Completo</h6>
+                    <div class="input-group mb-3">
 
-<!--listado de productos-->
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="completo" placeholder="Nombres Apellidos"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <h6>Dirección</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-home"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="dir" placeholder="Av 17 N 3-35"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <h6>Email</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="email" id="email" class="form-control" placeholder="Correo Electrónico"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <h6>Telefono</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                        </div>
+                        <input type="text" id="tel" class="form-control" placeholder="3157876185" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <h6>Password</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <input type="password" minlength="6" id="pass1" class="form-control" placeholder="Password"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="password" minlength="6 id=" pass2" class="form-control" placeholder="Confirmación"
+                            aria-label="Username" aria-describedby="basic-addon1">
+
+                    </div>
+                    <h6 id="min">Mínimo 6 Caracteres</h6>
+                </div>
+                <div id="boton" class="modal-footer text-left">
+
+                    <input type="submit" value="Registrarse" id="registrar" class="btn btn-primary"
+                        data-dismiss="modal" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--form de contacto-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Contacto de Clientes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-primary alert-dismissible fade show text-left" role="alert">
+                        <strong>Info!</strong> Si tienes alguna pregunta no dudes en contactarnos. Estaremos
+                        atentos a responder cualquier inquietud que tengas.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <h6>Nombre Completo</h6>
+                    <div class="input-group mb-3">
+
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombres Apellidos"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <h6>Email</h6>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+
+                            <span class="input-group-text" id="basic-addon1"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico"
+                            aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <h6>Mensaje</h6>
+                    <div class="input-group">
+
+                        <textarea class="form-control" id="campo" aria-label="With textarea"></textarea>
+                    </div>
+
+                </div>
+                <div id="boton" class="modal-footer text-left">
+
+                    <input type="submit" value="Contactar" id="contactar" class="btn btn-primary"
+                        data-dismiss="modal" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
+        <body>
+            <!--listado de productos-->
             <div class="container col-12">
                 <div class="row">
                     <div class="listado col-12">
-                        <h1 id="list">Listado de Obsequios</h1>
+                        <h1 id="list">Productos!</h1>
                     </div>
                     <br>
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/alcanciabuena.png">
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
                                 </h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample">
                                     Ver mas Respecto a este Articulo
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
                                 </p>
                                 <p class="card-text text-right">
                                     <a data-toggle="modal" data-target="#exampleModal3" href="#"
@@ -129,33 +252,34 @@
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-sm-3">
                         <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/cine.jpg"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
-                                <p class="collapse" id="collapseExample2">
-                                    Ver mas Respecto a este Articulo
-                                </p>
-                                <p class="card-text text-right">
-                                    <a data-toggle="modal" data-target="#exampleModal3" href="#"
-                                        class="btn btn-primary">Añadir al Carrito</a>
-                                    <a data-toggle="collapse" href="#collapseExample2" role="button"
-                                        aria-expanded="false" aria-controls="collapseExample" href="#"
-                                        class="btn bt-success">Más >></a>
-                                </p>
-                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                            </h5>
+                            <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                Talle 85,90,95 y 100<br>
+                                Precio: $1500</p>
+                            <p class="collapse" id="collapseExample2">
+                        Ver mas Respecto a este Articulo
+                      </p>
+                            <p class="card-text text-right">
+                            <a data-toggle="modal" data-target="#exampleModal3"  href="#" class="btn btn-primary">Añadir al Carrito</a>
+                            <a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample"   href="#" class="btn bt-success">Más >></a>
+                          </p>
+                          </div>
                         </div>
-                    </div>
+                      </div>
+
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/cereales.jpg"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample3">
                                     Ver mas Respecto a este Articulo
                                 </p>
@@ -172,10 +296,11 @@
                     <div class="col-sm-3">
                         <div class="card ">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/123.jpg"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample4">
                                     Ver mas Respecto a este Articulo
                                 </p>
@@ -192,10 +317,11 @@
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/bobina.jpg"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample5">
                                     Ver mas Respecto a este Articulo
                                 </p>
@@ -212,10 +338,11 @@
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/1000.png"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample6">
                                     Ver mas Respecto a este Articulo
                                 </p>
@@ -232,10 +359,11 @@
                     <div class="col-sm-3">
                         <div class="card">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/500.png"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample7">
                                     Ver mas Respecto a este Articulo
                                 </p>
@@ -252,10 +380,11 @@
                     <div class="col-sm-3">
                         <div class="card ">
                             <div class="card-body">
-                                <h5 class="card-title text-center"><img id="img_obs" src="imagen/canino.jpg"></h5>
-                                <p class="card-text"><label id="desayuno">Desayuno Sorpresa</label><br>Desayunos
-                                    Sorpresa<br>Espectacular Detalle<br>
-                                    Incluye: $50.000</p>
+                                <h5 class="card-title text-center"><img id="img_obs" src="../img/brallet.jpg">
+                                </h5>
+                                <p class="card-text"><label id="desayuno">Brallet de encaje</label><br>Brallet<br>
+                                    Talle 85,90,95 y 100<br>
+                                    Precio: $1500</p>
                                 <p class="collapse" id="collapseExample8">
                                     Ver mas Respecto a este Articulo
                                 </p>
@@ -272,135 +401,7 @@
                 </div>
             </div>
 
-<!--form de registro-->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Registro de Clientes</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <h6>Nombre Completo</h6>
-                            <div class="input-group mb-3">
-
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                </div>
-                                <input type="text" class="form-control" id="completo" placeholder="Nombres Apellidos"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <h6>Dirección</h6>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-home"></i></span>
-                                </div>
-                                <input type="text" class="form-control" id="dir" placeholder="Av 17 N 3-35"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <h6>Email</h6>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i
-                                            class="fa fa-envelope"></i></span>
-                                </div>
-                                <input type="email" id="email" class="form-control" placeholder="Correo Electrónico"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <h6>Telefono</h6>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                </div>
-                                <input type="text" id="tel" class="form-control" placeholder="3157876185"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <h6>Password</h6>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock"></i></span>
-                                </div>
-                                <input type="password" minlength="6" id="pass1" class="form-control"
-                                    placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
-                                <input type="password" minlength="6 id=" pass2" class="form-control"
-                                    placeholder="Confirmación" aria-label="Username" aria-describedby="basic-addon1">
-
-                            </div>
-                            <h6 id="min">Mínimo 6 Caracteres</h6>
-                        </div>
-                        <div id="boton" class="modal-footer text-left">
-
-                            <input type="submit" value="Registrarse" id="registrar" class="btn btn-primary"
-                                data-dismiss="modal" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!--form de contacto-->
-            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Contacto de Clientes</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="alert alert-primary alert-dismissible fade show text-left" role="alert">
-                                <strong>Info!</strong> Si tienes alguna pregunta no dudes en contactarnos. Estaremos
-                                atentos a responder cualquier inquietud que tengas.
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <h6>Nombre Completo</h6>
-                            <div class="input-group mb-3">
-
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                </div>
-                                <input type="text" id="nombre" class="form-control" placeholder="Nombres Apellidos"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <h6>Email</h6>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-
-                                    <span class="input-group-text" id="basic-addon1"><i
-                                            class="fa fa-envelope"></i></span>
-                                </div>
-                                <input type="email" id="mail" class="form-control" placeholder="Correo Electrónico"
-                                    aria-label="Username" aria-describedby="basic-addon1">
-                            </div>
-                            <h6>Mensaje</h6>
-                            <div class="input-group">
-
-                                <textarea class="form-control" id="campo" aria-label="With textarea"></textarea>
-                            </div>
-
-                        </div>
-                        <div id="boton" class="modal-footer text-left">
-
-                            <input type="submit" value="Contactar" id="contactar" class="btn btn-primary"
-                                data-dismiss="modal" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-<!--añadir al carrito-->
+            <!--añadir al carrito-->
             <div class="modal fade col-12" id="exampleModal3" tabindex="-1" role="dialog"
                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -442,57 +443,11 @@
             </div>
 
 
-            <footer class="footer">
-                <div id="cont" class="container col-12">
-                    <div class="row">
-                        <div class="col-sm-12 text-center">
-                            <h2 id="titulo">¿ Cómo Comprar en Obsequiarte.co?</h2>
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img id="img_footer" src="imagen/canino.jpg">
-                            <p id="mensajito">1. Solcitas el regalos que desas obsequiar. Nos Informas<br>Lorem ipsum
-                                dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            </p>
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img id="img_footer" src="imagen/icono.png">
-                            <p id="mensajito">2. Define tu forma de pago
-                            </p>
-                        </div>
-                        <div class="col-sm-4 text-center">
-                            <img id="img_footer" src="imagen/1000.png">
-                            <p id="mensajito">3. Nosotros te lo enviamos a tu casa gratis
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="cont2" class="container col-12">
-                    <div class="row">
-                        <div class="col-sm-12 text-left">
-                            <h2 id="titulo2">Paquetes Especiales a tu Medida</h2>
-                        </div>
-                        <div class="col-sm-6 text-left">
-
-                            <p id="mensajito2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                            <img id="img_footer2" src="imagen/icono.png">
-                            <p id="mensajito">2. Define tu forma de pago
-                            </p>
-                        </div>
-                        <div class="col-sm-3 text-center">
-                            <img id="img_footer2" src="imagen/1000.png">
-                            <p id="mensajito">3. Nosotros te lo enviamos a tu casa gratis
-                            </p>
-                        </div>
-                    </div>
+            <footer >
+                <address>
+                    Ludmila Shirley Pedrozzi Taborda<br>
+                    ludmila.pedrozzi02@gmail.com
+                </address>
             </footer>
 
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

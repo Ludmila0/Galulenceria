@@ -20,7 +20,6 @@ body {
 .iconoderecha {
     text-align: end;
 }
-
 .iconosarticle {
     color: grey;
 }
@@ -43,6 +42,10 @@ h2 {
     font-weight: bold;
 }
 ul>li:hover {
+    background-color: white;
+    transition-duration:1s ;
+}
+ul> form li:hover {
     background-color: white;
     transition-duration:1s ;
 }
@@ -251,4 +254,7 @@ a {
   a:hover {
     color: #020202;
     text-decoration: none;
+}
+#img_obs{
+	height: 200px;
 }
