@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+div {
+    background-color: azure;
+    height: 120px;
+    border: 2px solid blue;
+    margin: 10px;
+}
+
+div p {
+    font-size: 20px;
+}
+
+div h2 {
+    padding-left: 8px ;
+    color: grey;
+}
