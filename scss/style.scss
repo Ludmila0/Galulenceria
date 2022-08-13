@@ -1,11 +1,46 @@
-div{
-    background-color: azure;
-    height: 120px;
-    border: 1px solid green;
-    margin: 10px;
-    p {
-      font-size: 20px;
-      font-weight: 40px;
-      
+article{
+    background-color: rgb(255, 255, 255);
+}
+section {
+    div.quienes{
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: black;
     }
+}
+section{
+    div.subtitle {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 2;
     }
+    div.historia {
+        font-size: 20px;
+        line-height: 2;
+    }
+}
+img {
+    padding: 15px;
+}
+footer{
+    background-image: url(../img/hojacorta.jpg);
+    background-repeat:no-repeat;
+    height: 200px;
+}
+@media screen and (max-width:1199px) {
+    section {
+        div.subtitle {
+            line-height: 1.5;
+        } 
+    }
+
+}
+
+
+
+
+
+
+
+
+
