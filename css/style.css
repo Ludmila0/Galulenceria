@@ -1,5 +1,5 @@
 article {
-  background-color: white; }
+  background-color: #fadbdb; }
 
 section div.quienes {
   font-size: 50px;
@@ -17,11 +17,6 @@ section div.historia {
 
 img {
   padding: 15px; }
-
-footer {
-  background-image: url(../img/hojacorta.jpg);
-  background-repeat: no-repeat;
-  height: 200px; }
 
 @media screen and (max-width: 1199px) {
   section div.subtitle {

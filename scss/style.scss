@@ -1,5 +1,5 @@
 article{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(250, 219, 219);
 }
 section {
     div.quienes{
@@ -22,11 +22,7 @@ section{
 img {
     padding: 15px;
 }
-footer{
-    background-image: url(../img/hojacorta.jpg);
-    background-repeat:no-repeat;
-    height: 200px;
-}
+
 @media screen and (max-width:1199px) {
     section {
         div.subtitle {
