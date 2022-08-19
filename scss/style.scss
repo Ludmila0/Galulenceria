@@ -1,6 +1,6 @@
 $estilos: (
     color:rgb(250, 219, 219),
-    fuente: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif , 
+    fuente: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif" , 
     tFuente: 50px,
 );
 
@@ -21,12 +21,9 @@ section{
         line-height: 2;
     }
     div.historia {
-        font-size: 20px;
-        line-height: 2;
+       @extend div.subtitle;
+       font-weight: normal;
     }
-}
-img {
-    padding: 15px;
 }
 
 @media screen and (max-width:1199px) {
@@ -35,8 +32,16 @@ img {
             line-height: 1.5;
         } 
     }
-
 }
+
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .img {
+    @include sizes(100px, 50px);
+ }
+ 
 
 
 

@@ -3,21 +3,21 @@ article {
 
 section div.quienes {
   font-size: 50px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif";
   color: black; }
 
-section div.subtitle {
+section div.subtitle, section div.historia {
   font-size: 20px;
   font-weight: bold;
   line-height: 2; }
 
 section div.historia {
-  font-size: 20px;
-  line-height: 2; }
-
-img {
-  padding: 15px; }
+  font-weight: normal; }
 
 @media screen and (max-width: 1199px) {
-  section div.subtitle {
+  section div.subtitle, section div.historia {
     line-height: 1.5; } }
+
+.img {
+  height: 50px;
+  width: 100px; }
