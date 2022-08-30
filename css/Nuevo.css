@@ -98,6 +98,7 @@ ul> form li:hover {
     width: 170px;
 }
 
+/*
 .gridLud {
     display: grid;
     height: 100vh;
@@ -126,11 +127,8 @@ ul> form li:hover {
     grid-row: 6/7;
     grid-column: 1/6;
 }
-.carruselContainer{
-    margin: 5px;
-    width: 1200px;
-    height: 5px;
-}
+*/
+
 .itemsdegrid {
     align-items: center;
     justify-content:space-evenly;
